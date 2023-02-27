@@ -1,0 +1,4 @@
+// useAppConfig()
+export default defineAppConfig({
+
+})
