@@ -5,7 +5,7 @@ import ElementPlus from 'unplugin-element-plus/vite'
 // useRuntimeConfig
 export default defineNuxtConfig({
     typescript:{
-        shim:true,
+        shim:false,
     },
     app:{
         head:{
@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     },
     runtimeConfig:{
         public:{
-            apiBase: '',
         }
     },
     components:[{
@@ -31,5 +30,13 @@ export default defineNuxtConfig({
             ElementPlus()
         ],
         
+    },
+    modules: ['@nuxtjs/strapi'],
+    strapi:{
+        url: 'http://localhost:1337',
+        prefix: '/api',
+        version: 'v4',
+        cookie: {},
+        cookieName: 'strapi_jwt'
     }
 })

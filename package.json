@@ -8,10 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/strapi": "^1.8.1",
     "nuxt": "^3.2.2",
     "unplugin-element-plus": "^0.7.0"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
     "element-plus": "^2.2.32"
   }
 }
